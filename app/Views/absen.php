@@ -17,8 +17,6 @@
           <div class="col-lg-12">
           <?php if(!empty(session()->getFlashdata('error'))) : ?>
                   <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <h4>Periksa Kembali Entri Form</h4>
-                    <hr/>
                     <?php echo session()->getFlashdata('error'); ?>
                     <button type="button" class="close" data-dismiss="alert" aria-label="close">
                       <span aria-hidden="true">&times;</sapn>

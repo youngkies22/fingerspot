@@ -25,13 +25,14 @@
               </div> -->
               <!-- /.card-header -->
               <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="example2" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>scan_date</th>
-                    <th>pin</th>
+                    <th>SCAN DATE</th>
+                    <th>PIN</th>
                     <th>NAMA</th>
-                    <th>inoutmode</th>
+                    <th>JENIS FINGER</th>
+                    <th>AKSI</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -43,7 +44,21 @@
                     <td><?= $val->scan_date; ?></td>
                     <td><?= $val->pin; ?></td>
                     <td><?= $val->pegawai_nama; ?></td>
-                    <td><?= $val->inoutmode; ?></td>
+                    <td><?php 
+                      if($val->inoutmode ==1 ){
+                        echo'<span class="badge bg-primary">Masuk</span>';
+                      }
+                      elseif($val->inoutmode ==2){
+                        echo'<span class="badge bg-success">Pulang</span>';
+                      }
+                      else{
+
+                      }
+                    ?></td>
+                    <td>
+                    <button data-id="<?= $val->id; ?>" type="button" class="hapus btn btn-outline-danger btn-block">
+                      <i class="fa fa-trash"></i> Hapus</button>
+                    </td>
                   </tr>
                   <?php } ?>
                   </tbody>
@@ -72,3 +87,5 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+  

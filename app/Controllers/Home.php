@@ -54,7 +54,8 @@ class Home extends BaseController
 		// ->join('pegawai', on)
 		// ->get();
 		
-		$bulan=7;
+		$tanggal = date("Y-m-d");
+		$bulan = date("m",strtotime($tanggal));
 		
 		$dataabsen = $this->log->getWhereAbsen($bulan);
 		$data = [
@@ -73,6 +74,10 @@ public function saveAbsenMasuk(){
 			$pinPegawai = $this->request->getVar('nama');
 			$jam = $this->request->getVar('jam');
 			$tanggal = date("Y-m-d",strtotime($this->request->getVar('tanggal')));
+			
+			$tgl = date("d",strtotime($tanggal));
+			$bulan = date("m",strtotime($tanggal));
+
 			$sn = "FIO66208020150657";
 
 			$timestamp = $tanggal.' '.$jam;
@@ -92,13 +97,22 @@ public function saveAbsenMasuk(){
 				'work_code'		=>0,
 				
 			];
-		 $data = 	$this->log->save($array);
+		 
+			$cekData = $this->log->cekAbsenMasuk($tgl,$bulan,$pinPegawai);
+			$hitung = count($cekData->getResult());
+		 if($hitung > 0){
+			session()->setFlashdata('error','Data Absen Masuk Guru pada tanggal '.$tanggal.' Sudah Ada Pada Database Kami');
+		 }
+		 else{
+			$data = 	$this->log->save($array);
 			if($data){
 				session()->setFlashdata('success','Data Absen Masuk Berhasil Tambah');
 			}
 			else{
-
+				session()->setFlashdata('error','Error Gagal Menyimpan Data');
 			}
+		 }
+		 
 			return redirect()->back()->withInput();
 			
 		}
@@ -116,6 +130,10 @@ public function saveAbsenPulang(){
 			$pinPegawai = $this->request->getVar('nama1');
 			$jam = $this->request->getVar('jam1');
 			$tanggal = date("Y-m-d",strtotime($this->request->getVar('tanggal1')));
+
+			$tgl = date("d",strtotime($tanggal));
+			$bulan = date("m",strtotime($tanggal));
+
 			$sn = "FIO66208020150657";
 
 			$timestamp = $tanggal.' '.$jam;
@@ -135,13 +153,23 @@ public function saveAbsenPulang(){
 				'work_code'		=>0,
 				
 			];
-		 $data = 	$this->log->save($array);
-			if($data){
-				session()->setFlashdata('success','Data Absen Pulang Berhasil Tambah');
+
+			$cekData = $this->log->cekAbsenPulang($tgl,$bulan,$pinPegawai);
+			$hitung = count($cekData->getResult());
+			
+			if($hitung > 0){
+				session()->setFlashdata('error','Data Absen Pulang Guru pada tanggal '.$tanggal.' Sudah Ada Pada Database Kami');
 			}
 			else{
-
+				$data = 	$this->log->save($array);
+				if($data){
+					session()->setFlashdata('success','Data Absen Pulang Berhasil di Tambah');
+				}
+				else{
+					session()->setFlashdata('error','Error Gagal Menyimpan Data');
+				}
 			}
+
 			return redirect()->back()->withInput();
 			
 		}
@@ -152,6 +180,10 @@ public function saveAbsenPulang(){
 	
 	
 	
+}
+public function hapusLogAbsen(){
+	$id = $this->request->getVar('id');
+	$this->log->delete($id);
 }
 
 }

@@ -31,16 +31,21 @@
 <script>
   $(function () {
     $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+      "responsive": true, 
+      "lengthChange": false, 
+      "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+
     $('#example2').DataTable({
+      "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
       "paging": true,
-      "lengthChange": false,
-      "searching": false,
+      "lengthChange": true,
+      "searching": true,
       "ordering": true,
       "info": true,
-      "autoWidth": false,
+      "autoWidth": true,
       "responsive": true,
     });
   });
@@ -52,6 +57,28 @@
     theme: 'bootstrap4'
   });
 </script>
+<script>
+      $(document).on('click', '.hapus', function() {
+        var id = $(this).data('id');
+        var answer = window.confirm("Yakin Data Absensi Akan Di Hapus ?");
+        if (answer) {
+          $.ajax({
+            type: 'POST',
+            url: '<?= base_url("home/hapusLogAbsen"); ?>',
+            data: 'id=' + id,
+          
+            success: function(response) {
+              location.reload();
+            }
+				  });
+        }
+        else {
+            //some code
+        }
+        
 
+      });
+
+  </script>
 </body>
 </html>

@@ -1,0 +1,129 @@
+CRITICAL - 2021-07-20 04:48:13 --> Undefined property: App\Controllers\Home::$db
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\1.WEB_SERVER...', 96, Array)
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 04:49:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::count()
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(96): App\Models\Att_log->cekAbsenMasuk('2021-07-20 06:4...', '28001')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 04:49:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::count()
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-20 04:50:26 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\1.WEB_SERVER...', 97, Array)
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(97): count(Object(CodeIgniter\Database\MySQLi\Result))
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-20 04:50:34 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\1.WEB_SERVER...', 98, Array)
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(98): count(Object(CodeIgniter\Database\MySQLi\Result))
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-20 04:56:54 --> Too few arguments to function App\Models\Att_log::cekAbsenMasuk(), 2 passed in D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php on line 100 and exactly 3 expected
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(100): App\Models\Att_log->cekAbsenMasuk('2021-07-20 06:4...', '28001')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 04:57:45 --> Undefined variable: bulan
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Models\Att_log.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\1.WEB_SERVER...', 28, Array)
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(100): App\Models\Att_log->cekAbsenMasuk('2021-07-20 06:4...', '28001')
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-20 04:57:54 --> Too few arguments to function App\Models\Att_log::cekAbsenMasuk(), 2 passed in D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php on line 100 and exactly 3 expected
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(100): App\Models\Att_log->cekAbsenMasuk('2021-07-20 06:4...', '28001')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 04:58:09 --> Too few arguments to function App\Models\Att_log::cekAbsenMasuk(), 2 passed in D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php on line 100 and exactly 3 expected
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(100): App\Models\Att_log->cekAbsenMasuk('2021-07-20 06:4...', '28001')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 04:59:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(100): App\Models\Att_log->cekAbsenMasuk('20', '07', '28001')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 05:32:05 --> syntax error, unexpected ')'
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('home/absen')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('home/absen')
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 05:33:01 --> Call to undefined function App\Controllers\var_dum()
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenMasuk()
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-07-20 05:39:17 --> Duplicate entry 'FIO66208020150657-2021-07-20 16:05:12-28001' for key 'PRIMARY'
+CRITICAL - 2021-07-20 05:39:17 --> Duplicate entry 'FIO66208020150657-2021-07-20 16:05:12-28001' for key 'PRIMARY'
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `at...')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\BaseModel.php(687): CodeIgniter\Model->insert(Array, false)
+#8 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\app\Controllers\Home.php(164): CodeIgniter\BaseModel->save(Array)
+#9 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(928): App\Controllers\Home->saveAbsenPulang()
+#10 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-07-20 06:23:10 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('home/dataAbsen')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('home/dataAbsen')
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 06:23:21 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('home/dataAbsen')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('home/dataAbsen')
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 06:23:32 --> syntax error, unexpected ')', expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('home/dataAbsen')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('home/dataAbsen')
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-20 06:23:37 --> syntax error, unexpected ';', expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('home/dataAbsen')
+#1 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(809): CodeIgniter\Router\Router->handle('home/dataAbsen')
+#2 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\1.WEB_SERVER\laragon-fingerspot\www\fingerspot\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

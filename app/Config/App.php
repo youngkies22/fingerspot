@@ -22,8 +22,12 @@ class App extends BaseConfig
 	 * environments.
 	 *
 	 * @var string
+	 * http://localhost/
 	 */
-	public $baseURL = 'http://localhost:8080/';
+	//public $baseURL = 'http://localhost/';
+
+	//app/Config/Constants.php 
+	public $baseURL = 'http://localhost/';
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -36,7 +40,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $indexPage = 'index.php';
+	public $indexPage = '';
 
 	/**
 	 * --------------------------------------------------------------------------
